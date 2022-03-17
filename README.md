@@ -13,17 +13,24 @@ Working:
 Here the basic layout is when you run your program a canvas appears in front of you with color options on the top bar ( red , green and blue) along with a earser.
 
 Index Finger Up + Middle Finger Up - Selection 
+
 --you can navigate anywhere on the canvas. By pointing to the colors or the eraser that particular item will get selected.
 
 Index Finger UP -Draw
+
 -- after selecting a color you can lower your middle finger and with only the index finger raised you can move the finger around to draw patterns on the canvas
 
 
-Logic for HandTracking
+Logic for HandTracking:
+
 Using the mediapipe library we have written a module name HandTracking.py
+
 --In that module we are tracking one hand and detecting 21 landmarks on it.
+
 --image of 21 hand landmarks -https://google.github.io/mediapipe/solutions/hands.html
+
 --then we extract those landmarks in a list in the format [no of landmark,x-value,y-value]
+
 --then with the help of these landmarks we identify when a finger is up and when it is down
 
 Logic for Selection:
