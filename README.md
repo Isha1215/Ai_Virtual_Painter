@@ -20,7 +20,6 @@ Index Finger UP -Draw
 
 -- after selecting a color you can lower your middle finger and with only the index finger raised you can move the finger around to draw patterns on the canvas
 
-
 Logic for HandTracking:
 
 Using the mediapipe library we have written a module name HandTracking.py
@@ -34,12 +33,18 @@ Using the mediapipe library we have written a module name HandTracking.py
 --then with the help of these landmarks we identify when a finger is up and when it is down
 
 Logic for Selection:
+
 --While we are navigating we Index and Middle finger whenever we will be in the range of the image where red color is there we will overlay the header of the canvas 
   with a new header image depicting red color is selected. (Visually interactive display for the user)
--- In the logic we will change the color value to red
+  
+--In the logic we will change the color value to red
+
 --Similary for other elements on the header
 
 Logic for Draw:
+
 --When we are done selecting and ready to draw we keep a track of the Index finger position.
+
 --To keep a track we will be using 2 pair of variables one to hold the previous position and other to hold current.
+
 --We will keep drawing lines from previous to current then, update previous to current and calculate the new current.
